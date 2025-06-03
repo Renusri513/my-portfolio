@@ -1,0 +1,91 @@
+.currently-section {
+  padding: 4rem 2rem;
+  background: #0a0f1a;
+  color: #f0f9ff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #00e0ff;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #c5dfff;
+  margin-bottom: 2.5rem;
+}
+
+.currently-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.currently-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  width: 340px;
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.cohort-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+  text-align: left;
+
+  h3 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #a8c5dd;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+
+    li {
+      margin-bottom: 0.5rem;
+      list-style: disc;
+
+      a {
+        color: #00e5ff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  a {
+    color: #00e5ff;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

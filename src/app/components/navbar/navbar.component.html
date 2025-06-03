@@ -1,0 +1,17 @@
+<header class="navbar-header">
+  <!-- Menu Button -->
+  <h1 class="logo">My Portfolio</h1> 
+  <button class="menu-button" (click)="toggleMenu()">☰</button>
+
+  <!-- Navigation Menu -->
+  <nav *ngIf="isMenuOpen" class="nav-popup">
+    <a routerLink="/" (click)="closeMenu()">Home</a>
+    <a routerLink="/about" (click)="closeMenu()">About</a>
+    <a routerLink="/projects" (click)="closeMenu()">Projects</a>
+    <a routerLink="/skills" (click)="closeMenu()">Skills</a>
+    <a routerLink="/certifications" (click)="closeMenu()">Certificates</a>
+    <a routerLink="/currently" (click)="closeMenu()">Currently I'm</a>
+    <a href="assets/resume.pdf" target="_blank" (click)="closeMenu()">Resume</a>
+    <a routerLink="/contact" (click)="closeMenu()">Contact</a>
+  </nav>
+</header>
